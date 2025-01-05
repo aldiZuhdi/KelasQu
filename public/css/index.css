@@ -48,7 +48,7 @@ html {
   height: 100vh;
   position: absolute;
   z-index: -99999;
-  background: url(public/images/background.png);
+  background: url(../public/images/background.png);
   background-position: top;
   background-repeat: no-repeat;
 }
