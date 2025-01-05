@@ -1,4 +1,4 @@
-@import url("/public/css/styleConfigs.css");
+@import url("public/css/styleConfigs.css");
 
 /* Templates style */
 .brand {
@@ -40,7 +40,7 @@ html {
   height: 100vh;
   position: absolute;
   z-index: -99999;
-  background-image: url(/public/images/background.png);
+  background-image: url(public/images/background.png);
   background-position: top;
   background-repeat: no-repeat;
 }
