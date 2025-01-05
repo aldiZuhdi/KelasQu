@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script lang="JavaScript">
+      var txt = " KelasQu | SMK Teknologi 07 | ";
+      var speed = 500;
+      var refresh = null;
+
+      function action() {
+          document.title = txt;
+          txt = txt.substring(1, txt.length) + txt.charAt(0);
+          refresh = setTimeout("action()", speed);
+      }
+      action();
+    </script>
+    <title>KelasQu | SMK Teknologi 07</title>
+    <!-- Web icons -->
+    <link rel="shortcut icon" href="/public/icons/web-logo.jpg" type="image/x-icon" />
+    <!-- Local CSS Files -->
+    <link rel="stylesheet" href="/public/css/index.css" />
+
+    <!-- Vendor CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="bgpos bg"></div>
+    <!-- <?php include 'public/components/header.php' ?> -->
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <nav>
+          <div class="branding animate__animated animate__pulse animate__infinite animate__slower">
+            <h1 class="brand">KelasQu</h1>
+          </div>
+          <div class="navigation">
+            <ul>
+              <li><a href="../index.php" class="nav-links">Home</a></li>
+              <li><a href="" class="nav-links">Admission</a></li>
+              <li><a href="" class="nav-links">Contact</a></li>
+            </ul>
+            <div class="button-cta">
+              <a href="">Sign in</a>
+              <div class="arrow">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+            </div>
+          </div>
+          <div class="toggle-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End header -->
+    <!-- Main script -->
+    <main>
+      <!-- Hero Section -->
+      <!-- <?php include 'public/components/heroIndex.php' ?> -->
+      <section id="hero" class="gap">
+        <div class="container animate__animated animate__fadeIn animate__slow">
+          <div class="text-area">
+            <div class="brand-text">
+              <h1 class="brand hero">KelasQu</h1>
+            </div>
+            <div class="description-text">
+              <h3 class="description">Selamat datang di media pembelajaran</h3>
+            </div>
+            <div class="button-cta hero">
+              <a href="" class="button border">Sign in</a>
+              <a href="" class="button">Admission</a>
+            </div>
+          </div>
+          <div class="image-area">
+            <div class="image-wrapper">
+              <img src="public/images/hero-background.png" alt="Hero" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End hero Section -->
+    </main>
+
+    <!-- Local JS Files -->
+    <script src="public/script/index.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/51db0def59.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.js"></script>
+  </body>
+</html>
