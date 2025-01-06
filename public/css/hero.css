@@ -68,7 +68,7 @@ section#hero .container {
 
 .button-cta.hero {
   width: auto;
-  height: 50px;
+  height: auto;
   margin-top: 30px;
   display: flex;
   align-items: center;
@@ -83,6 +83,7 @@ section#hero .container {
   border-radius: 100px;
   border: 1px solid var(--primary-color);
   color: white;
+  z-index: 999;
   background-color: var(--primary-color);
 }
 .button:hover {

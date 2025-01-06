@@ -251,14 +251,6 @@ html {
     gap: 5px;
     border: none;
   }
-
-  section#hero {
-    z-index: -1;
-  }
-
-  section#hero .container {
-    z-index: -1;
-  }
 }
 
 @media screen and (max-width: 425px) {
