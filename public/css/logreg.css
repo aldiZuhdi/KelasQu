@@ -1,0 +1,94 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/President-University.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.card-container {
+  width: 280px;
+  height: auto;
+  padding: 10px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.24);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand-text {
+  width: 100%;
+  text-align: center;
+}
+
+.brand-card {
+  font-size: 30px;
+  font-weight: 800;
+  color: #333;
+}
+
+.login-form {
+  width: 100%;
+  height: 100%;
+}
+
+label {
+  padding-left: 10px;
+  color: #333;
+}
+
+.input-field {
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  color: #333;
+}
+
+p {
+  padding-left: 10px;
+  color: #333;
+}
+
+button {
+  width: 100%;
+  height: 30px;
+  border-radius: 40px;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  color: #333;
+  margin-top: 40px;
+}
+
+.captcha-error {
+  width: 100%;
+  height: 30px;
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}

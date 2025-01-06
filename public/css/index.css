@@ -79,8 +79,15 @@ html {
   transition: 0.3s ease;
 }
 
+@media screen and (max-width: 1400px) {
+  #features .container .image-area .image-wrapper img {
+    width: 80%;
+  }
+}
+
 @media screen and (max-width: 870px) {
   section#hero .container {
+    width: 98%;
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
@@ -143,6 +150,35 @@ html {
 
   .image-wrapper img {
     width: 300px;
+  }
+
+  section#features {
+    min-height: 100vh;
+  }
+
+  section#features .container {
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    background-color: #93488f;
+  }
+
+  #features .container .image-area .image-wrapper {
+    justify-content: center;
+  }
+
+  #features .container .text-area {
+    background-color: aqua;
+  }
+
+  #features .container .text-area .brand-text .brand-features {
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: -4px;
+  }
+
+  #features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
+    grid-template-columns: 8fr 2fr;
   }
 }
 
@@ -215,6 +251,7 @@ html {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    border: none;
   }
 
   section#hero {

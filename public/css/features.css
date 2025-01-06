@@ -1,7 +1,7 @@
 /* Features section */
 section#features {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 section#features .container {
@@ -54,7 +54,7 @@ section#features .container {
 #features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
   width: 100%;
   display: grid;
-  grid-template-columns: 8fr 2fr;
+  grid-template-columns: 9fr 1fr;
   gap: 1rem;
   align-items: center;
 }

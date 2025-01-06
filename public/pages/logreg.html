@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script lang="JavaScript">
+      var txt = " KelasQu | Landing Page | ";
+      var speed = 500;
+      var refresh = null;
+
+      function action() {
+          document.title = txt;
+          txt = txt.substring(1, txt.length) + txt.charAt(0);
+          refresh = setTimeout("action()", speed);
+      }
+      action();
+    </script>
+    <title>KelasQu | Landing Page</title>
+    <!-- Web icons -->
+    <link rel="shortcut icon" href="../icons/web-logo.jpg" type="image/x-icon" />
+    <!-- Local CSS Files -->
+    <link rel="stylesheet" href="../css/logreg.css" />
+    <!-- Vendor CSS Files -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card-wrapper">
+        <div class="brand-text">
+          <div class="brand-card">Login</div>
+        </div>
+        <form id="login-form" action="dashboard.html" class="login-form">
+          <div class="username">
+            <label for="username">Username</label>
+            <div class="input-field">
+              <input type="text" name="text" id="username" required autocomplete="off" />
+            </div>
+          </div>
+          <div class="password">
+            <label for="password">Password</label>
+            <div class="input-field">
+              <input type="password" name="password" id="password" required autocomplete="off" />
+            </div>
+          </div>
+          <div class="captcha">
+            <p class="captcha-question"></p>
+            <div class="input-field">
+              <input type="text" name="answer" id="answer-captcha" required autocomplete="off" />
+            </div>
+            <p id="captcha-error" class="captcha-error"></p>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <!-- Local JS Files -->
+    <script src="../script/logreg.js" defer></script>
+    <!-- Vendor JS Files -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/51db0def59.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.js"></script>
+  </body>
+</html>
