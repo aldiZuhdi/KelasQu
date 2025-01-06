@@ -160,16 +160,14 @@ html {
     width: 98%;
     display: flex;
     flex-direction: column;
-    background-color: #93488f;
   }
 
   #features .container .image-area .image-wrapper {
     justify-content: center;
   }
 
-  #features .container .text-area {
-    background-color: aqua;
-  }
+  /* #features .container .text-area {
+  } */
 
   #features .container .text-area .brand-text .brand-features {
     font-size: 45px;
