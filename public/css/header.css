@@ -1,12 +1,11 @@
-/* This for troubleshooting */
-
-@import url(styleConfigs.css);
-
+/* header navbar */
 header {
   width: 100%;
   height: 60px;
-  font-family: "Poppins";
+  position: fixed;
   background-color: transparent;
+  z-index: 99999;
+  transition: 1s ease;
 }
 
 header .container {
@@ -20,71 +19,74 @@ nav {
   height: 100%;
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
-
+/* header brand */
 nav .branding {
   width: 180px;
   height: auto;
 }
 
-nav .branding h1 {
-  font-size: 30px;
+.brand {
   letter-spacing: -2px;
 }
-
+/* header navigation */
 nav .navigation {
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-nav .navigation ul {
-  list-style: none;
+ul {
+  list-style-type: none;
   display: flex;
   align-items: center;
   gap: 1.3rem;
 }
 
-nav a {
-  text-decoration: none;
-  color: var(--dark);
-  font-weight: 500;
+.nav-links {
+  opacity: 0.75;
+  transition: 0.15s ease-in-out;
+}
+.nav-links:hover {
+  opacity: 1;
 }
 
 .button-cta {
-  width: 90px;
+  width: 80px;
   display: flex;
-  gap: 5px;
   align-items: center;
-  justify-content: center;
+  gap: 5px;
 }
+
 .button-cta .arrow {
-  display: none;
-  transition: 0.2s ease-in-out;
+  overflow: hidden;
 }
 
 .button-cta .arrow i {
+  opacity: 0;
   font-size: 13px;
-  color: var(--dark);
+  margin-left: -10px;
+  transition: 0.15s ease-in-out;
 }
-
-.button-cta:hover .arrow {
-  display: block;
+.button-cta:hover .arrow i {
+  opacity: 1;
+  margin-left: 0px;
 }
-
-.toggle-navigation {
+/* navbar toggle */
+nav .toggle-navigation {
   width: auto;
   height: auto;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 5px;
 }
 
-span {
+.toggle-navigation span {
   width: 25px;
   height: 3px;
   background-color: var(--dark);
 }
+/* end header navbar */

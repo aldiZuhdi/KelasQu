@@ -20,7 +20,6 @@
     <link rel="shortcut icon" href="public/icons/web-logo.jpg" type="image/x-icon" />
     <!-- Local CSS Files -->
     <link rel="stylesheet" href="public/css/index.css" />
-
     <!-- Vendor CSS Files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.css" />
@@ -28,9 +27,10 @@
   </head>
   <body>
     <div class="bgpos bg"></div>
+    <div class="intersection"></div>
     <!-- <?php include 'public/components/header.php' ?> -->
     <!-- Header -->
-    <header>
+    <header class="header">
       <div class="container">
         <nav>
           <div class="branding animate__animated animate__pulse animate__infinite animate__slower">
@@ -38,7 +38,7 @@
           </div>
           <div class="navigation">
             <ul>
-              <li><a href="../index.php" class="nav-links">Home</a></li>
+              <li><a href="" class="nav-links">Home</a></li>
               <li><a href="" class="nav-links">Admission</a></li>
               <li><a href="" class="nav-links">Contact</a></li>
             </ul>
@@ -49,11 +49,11 @@
               </div>
             </div>
           </div>
-          <div class="toggle-navigation">
+          <button class="toggle-navigation" onclick="hamburgerMenu()">
             <span></span>
             <span></span>
             <span></span>
-          </div>
+          </button>
         </nav>
       </div>
     </header>
@@ -62,8 +62,8 @@
     <main>
       <!-- Hero Section -->
       <!-- <?php include 'public/components/heroIndex.php' ?> -->
-      <section id="hero" class="gap">
-        <div class="container animate__animated animate__fadeIn animate__slow">
+      <section id="hero" class="">
+        <div class="container gap animate__animated animate__fadeIn animate__slow">
           <div class="text-area">
             <div class="brand-text">
               <h1 class="brand hero">KelasQu</h1>
@@ -77,18 +77,96 @@
             </div>
           </div>
           <div class="image-area">
-            <div class="image-wrapper">
-              <img src="public/images/hero-background.png" alt="Hero" />
-            </div>
+            <div class="image-wrapper"><img src="public/images/hero-background.png" alt="Hero" /></div>
           </div>
         </div>
       </section>
       <!-- End hero Section -->
+
+      <!-- Features section -->
+      <section id="features">
+        <div class="container gap">
+          <div class="image-area">
+            <div class="image-wrapper">
+              <img src="public/images/3d phones.png" alt="phones" />
+            </div>
+          </div>
+          <div class="text-area">
+            <div class="brand-text">
+              <h1 class="brand-features">Fitur KelasQu</h1>
+            </div>
+            <div class="progress-area">
+              <div class="progress-wrapper">
+                <label for="">Absensi dan presensi</label>
+                <div class="progress container-fluid">
+                  <div class="progress-bar">
+                    <div class="progress-width"></div>
+                  </div>
+                  <div class="progress-rating">
+                    <div class="stars"><i class="fa-solid fa-star"></i></div>
+                    <h3>5</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-wrapper">
+                <label for="">Modul, video pembelajaran, tugas, dll</label>
+                <div class="progress container-fluid">
+                  <div class="progress-bar">
+                    <div class="progress-width"></div>
+                  </div>
+                  <div class="progress-rating">
+                    <div class="stars"><i class="fa-solid fa-star"></i></div>
+                    <h3>5</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-wrapper">
+                <label for="">Ruang ujian</label>
+                <div class="progress container-fluid">
+                  <div class="progress-bar">
+                    <div class="progress-width"></div>
+                  </div>
+                  <div class="progress-rating">
+                    <div class="stars"><i class="fa-solid fa-star"></i></div>
+                    <h3>5</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-wrapper">
+                <label for="">Fleksibilitas</label>
+                <div class="progress container-fluid">
+                  <div class="progress-bar">
+                    <div class="progress-width non-perfect"></div>
+                  </div>
+                  <div class="progress-rating">
+                    <div class="stars"><i class="fa-solid fa-star"></i></div>
+                    <h3>4.5</h3>
+                  </div>
+                </div>
+              </div>
+              <div class="progress-wrapper">
+                <label for="">Mudah untuk diakses</label>
+                <div class="progress container-fluid">
+                  <div class="progress-bar">
+                    <div class="progress-width"></div>
+                  </div>
+                  <div class="progress-rating">
+                    <div class="stars"><i class="fa-solid fa-star"></i></div>
+                    <h3>5</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End features section -->
     </main>
-    <footer style="text-align: center">&copy; Aldi</footer>
+    <footer style="text-align: center">&copy; by Aldi</footer>
 
     <!-- Local JS Files -->
-    <script src="public/script/index.js"></script>
+    <script src="public/script/index.js" defer></script>
+    <script src="public/script/header.js"></script>
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/51db0def59.js" crossorigin="anonymous"></script>
