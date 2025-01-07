@@ -12,3 +12,5 @@ document.addEventListener("scroll", () => {
     header.classList.remove("bg-change");
   }
 });
+
+// progress animation
