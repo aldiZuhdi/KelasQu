@@ -82,6 +82,7 @@ nav .toggle-navigation {
   display: none;
   flex-direction: column;
   gap: 5px;
+  background-color: aqua;
 }
 
 .toggle-navigation span {

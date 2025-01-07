@@ -72,7 +72,7 @@ html {
 .bg-change {
   /* background-color: var(--light); */
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
@@ -175,7 +175,12 @@ html {
     letter-spacing: -4px;
   }
 
-  #features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
+  #features
+    .container
+    .text-area
+    .progress-area
+    .progress-wrapper
+    .progress.container-fluid {
     grid-template-columns: 8fr 2fr;
   }
 }

@@ -49,9 +49,15 @@ section#features .container {
   width: 100%;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }
 
-#features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
+#features
+  .container
+  .text-area
+  .progress-area
+  .progress-wrapper
+  .progress.container-fluid {
   width: 100%;
   display: grid;
   grid-template-columns: 9fr 1fr;
@@ -83,10 +89,10 @@ section#features .container {
 }
 
 .progress-rating .stars i {
-  color: #333;
+  color: #d168cb;
 }
 
 .progress-rating h3 {
-  color: #333;
+  color: #d168cb;
 }
 /* End features section */

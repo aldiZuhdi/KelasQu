@@ -1,6 +1,7 @@
 // Initialize AOS
 AOS.init();
 
+// bg change navbar
 document.addEventListener("scroll", () => {
   const header = document.querySelector(".header");
   const intersection = document.querySelector(".intersection").offsetHeight;
