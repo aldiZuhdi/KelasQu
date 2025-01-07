@@ -81,8 +81,16 @@ nav .toggle-navigation {
   height: auto;
   display: none;
   flex-direction: column;
+  padding: 8px;
   gap: 5px;
-  background-color: aqua;
+  background-color: transparent;
+  transition: 0.15s ease;
+}
+
+nav .toggle-navigation.active {
+  border: 1px solid #333;
+  border-radius: 10px;
+  transition: 0.15s ease;
 }
 
 .toggle-navigation span {

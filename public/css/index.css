@@ -88,6 +88,7 @@ html {
 @media screen and (max-width: 870px) {
   section#hero .container {
     width: 98%;
+    height: auto;
     display: flex;
     flex-direction: column-reverse;
     gap: 2rem;
@@ -153,7 +154,7 @@ html {
   }
 
   section#features {
-    min-height: 100vh;
+    height: auto;
   }
 
   section#features .container {
@@ -166,6 +167,10 @@ html {
     justify-content: center;
   }
 
+  .progress-wrapper label {
+    font-size: 14px;
+  }
+
   /* #features .container .text-area {
   } */
 
@@ -175,12 +180,7 @@ html {
     letter-spacing: -4px;
   }
 
-  #features
-    .container
-    .text-area
-    .progress-area
-    .progress-wrapper
-    .progress.container-fluid {
+  #features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
     grid-template-columns: 8fr 2fr;
   }
 }

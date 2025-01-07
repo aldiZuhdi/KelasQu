@@ -1,7 +1,7 @@
 /* Features section */
 section#features {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 section#features .container {
@@ -19,7 +19,7 @@ section#features .container {
 #features .container .image-area .image-wrapper {
   display: flex;
   justify-content: start;
-  animation: none;
+  animation: floating 4s ease-in-out infinite;
 }
 
 #features .container .image-area .image-wrapper img {
@@ -52,15 +52,10 @@ section#features .container {
   overflow: hidden;
 }
 
-#features
-  .container
-  .text-area
-  .progress-area
-  .progress-wrapper
-  .progress.container-fluid {
+#features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
   width: 100%;
   display: grid;
-  grid-template-columns: 9fr 1fr;
+  grid-template-columns: 10fr 1fr;
   gap: 1rem;
   align-items: center;
 }
@@ -83,9 +78,11 @@ section#features .container {
 }
 
 .progress-rating {
+  width: auto;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: end;
+  gap: 2px;
 }
 
 .progress-rating .stars i {
@@ -93,6 +90,6 @@ section#features .container {
 }
 
 .progress-rating h3 {
-  color: #d168cb;
+  color: #333;
 }
 /* End features section */
