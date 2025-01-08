@@ -2,6 +2,7 @@
 @import url(header.css);
 @import url(hero.css);
 @import url(features.css);
+@import url(contact.css);
 
 :root {
   --dark: #333;
@@ -9,6 +10,18 @@
   --primary-color: #d168cb;
   --shadow-color: #93488f;
   --highlight-color: #edc3e9;
+}
+
+/* Untuk browser berbasis Webkit (Chrome, Edge, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Untuk Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
 
 /* Templates style */
@@ -171,6 +184,14 @@ html {
     font-size: 14px;
   }
 
+  section#contact .container {
+    width: 95%;
+  }
+
+  .content-area {
+    width: 100%;
+  }
+
   /* #features .container .text-area {
   } */
 
@@ -255,6 +276,14 @@ html {
     flex-direction: column;
     gap: 5px;
     border: none;
+  }
+
+  .content-area {
+    grid-template-columns: 1fr;
+  }
+
+  aside {
+    order: 2;
   }
 }
 
