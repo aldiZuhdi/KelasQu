@@ -197,7 +197,12 @@ html {
     letter-spacing: -4px;
   }
 
-  #features .container .text-area .progress-area .progress-wrapper .progress.container-fluid {
+  #features
+    .container
+    .text-area
+    .progress-area
+    .progress-wrapper
+    .progress.container-fluid {
     grid-template-columns: 8fr 2fr;
   }
 }

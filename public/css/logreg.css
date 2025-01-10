@@ -2,7 +2,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Po50px;", sans-serif;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(../images/President-University.jpg);
+  background: url(../images/background.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -22,8 +22,8 @@ body {
   height: auto;
   padding: 10px;
   border-radius: 16px;
-  background: rgba(255, 255, 255, 0.24);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+  background: rgba(173, 173, 173, 0.5);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
 }
@@ -49,6 +49,9 @@ body {
 .login-form {
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 label {
@@ -57,7 +60,43 @@ label {
 }
 
 .input-field {
-  margin-bottom: 10px;
+  width: 100%;
+}
+
+.password-area {
+  display: flex;
+  align-items: center;
+}
+
+#password {
+  width: 100%;
+}
+
+.show-hide {
+  height: auto;
+  display: flex;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  background-color: #cf78cb;
+}
+
+.eyeIcon {
+  padding-right: 1px;
+}
+
+.hide {
+  display: none;
+  /* padding-left: 2px; */
+  /* background-color: #d168cb; */
+}
+
+.togglePassword {
+  /* background-color: tomato; */
+  position: absolute;
+  right: 18px;
+  font-size: 14px;
+  font-weight: 300;
 }
 
 input {
@@ -67,6 +106,11 @@ input {
   border: none;
   outline: none;
   color: #333;
+  background-color: whitesmoke;
+  transition: all 0.15s ease-in-out;
+}
+input:focus {
+  outline: 1px solid #333;
 }
 
 p {
@@ -81,13 +125,18 @@ button {
   outline: none;
   border: none;
   font-weight: 600;
-  color: #333;
+  color: #fff;
+  background-color: #d168cb;
   margin-top: 40px;
+}
+button:active {
+  background-color: #cf78cb;
 }
 
 .captcha-error {
   width: 100%;
   height: 30px;
+  padding-top: 15px;
   color: red;
   font-size: 14px;
   text-align: center;

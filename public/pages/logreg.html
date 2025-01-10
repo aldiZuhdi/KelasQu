@@ -17,13 +17,23 @@
     </script>
     <title>KelasQu | Landing Page</title>
     <!-- Web icons -->
-    <link rel="shortcut icon" href="../icons/web-logo.jpg" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="../icons/web-logo.jpg"
+      type="image/x-icon"
+    />
     <!-- Local CSS Files -->
     <link rel="stylesheet" href="../css/logreg.css" />
     <!-- Vendor CSS Files -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body>
     <div class="card-container">
@@ -35,19 +45,50 @@
           <div class="username">
             <label for="username">Username</label>
             <div class="input-field">
-              <input type="text" name="text" id="username" required autocomplete="off" />
+              <input
+                type="text"
+                name="text"
+                id="username"
+                required
+                autocomplete="off"
+              />
             </div>
           </div>
           <div class="password">
             <label for="password">Password</label>
-            <div class="input-field">
-              <input type="password" name="password" id="password" required autocomplete="off" />
+            <div class="password-area">
+              <div class="input-field password">
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  required
+                  autocomplete="off"
+                />
+              </div>
+              <div class="show-hide">
+                <i
+                  class="fa-regular fa-eye eyeIcon togglePassword"
+                  onclick="togglePassword(true)"
+                ></i>
+                <i
+                  class="fa-regular fa-eye-slash hide eyeSlashIcon togglePassword"
+                  onclick="togglePassword(false)"
+                  style="display: none"
+                ></i>
+              </div>
             </div>
           </div>
           <div class="captcha">
             <p class="captcha-question"></p>
             <div class="input-field">
-              <input type="text" name="answer" id="answer-captcha" required autocomplete="off" />
+              <input
+                type="text"
+                name="answer"
+                id="answer-captcha"
+                required
+                autocomplete="off"
+              />
             </div>
             <p id="captcha-error" class="captcha-error"></p>
           </div>
@@ -59,7 +100,10 @@
     <script src="../script/logreg.js" defer></script>
     <!-- Vendor JS Files -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://kit.fontawesome.com/51db0def59.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/51db0def59.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/notyf@3.7.0/notyf.min.js"></script>
   </body>
