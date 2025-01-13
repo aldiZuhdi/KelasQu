@@ -30,7 +30,7 @@ loginForm.addEventListener("submit", (e) => {
     if (userAnswer === correctAnswer) {
       loginForm.submit(); // Submit form jika benar
     } else if (userAnswer !== correctAnswer) {
-      captchaErrorElement.textContent = "Tolol!! udah gede gabisa penjumlahan";
+      captchaErrorElement.textContent = "Tolol!! udah gede penjumlahan doang gabisa";
       // generateCaptcha(); // Buat soal baru jika salah
       // captchaAnswerInput.value = ""; // Reset jawaban
     } else {

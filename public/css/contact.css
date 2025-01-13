@@ -167,15 +167,17 @@ textarea {
   justify-content: center;
 }
 
-.button-cta.contact-contact a {
+.button-cta.contact-contact .button.button {
   width: 100%;
   padding: 8px 35px;
   border-radius: 50px;
   text-align: center;
   background-color: #edc3e9;
   color: #333;
+  font-size: 20px;
   font-weight: 600;
+  border: none;
 }
-.button-cta.contact-contact a:hover {
+.button-cta.contact-contact .button.button:hover {
   background-color: #f3d1f0;
 }
